@@ -1,6 +1,6 @@
 {
   "name": "picgo-plugin-autocopy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A picgo plugin for auto copying url to clipboard after uploading",
   "main": "dist/index.js",
   "publishConfig": {
