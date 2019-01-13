@@ -12,7 +12,7 @@ export = (ctx: picgo) => {
       {
         name: 'template',
         type: 'list',
-        choices: ['Markdown', 'HTML', 'URL', 'UBB', 'Custom'],
+        choices: ['markdown', 'HTML', 'URL', 'UBB', 'Custom'],
         default: 'URL'
       },
       {
@@ -42,7 +42,7 @@ export = (ctx: picgo) => {
       const pasteType = ctx.getConfig('picgo-plugin-autocopy.template') || 'URL'
       const tpl = url => {
         return {
-          'Markdown': `![](${url})`,
+          'markdown': `![](${url})`,
           'HTML': `<img src="${url}"/>`,
           'URL': url,
           'UBB': `[IMG]${url}[/IMG]`,
