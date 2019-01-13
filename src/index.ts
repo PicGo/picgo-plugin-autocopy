@@ -28,14 +28,6 @@ export = (ctx: picgo) => {
     return config
   }
 
-  const handleConfig = async (ctx: picgo) => {
-    const prompts = config(ctx)
-    const answer = await ctx.cmd.inquirer.prompt(prompts)
-    ctx.saveConfig({
-      'picgo-plugin-autocopy': answer
-    })
-  }
-
   const register = () => {
     ctx.on('finished', (msg: picgo) => {
       const customLink = ctx.getConfig('picgo-plugin-autocopy.customLink') || '$url'
@@ -59,7 +51,6 @@ export = (ctx: picgo) => {
   }
   return {
     register,
-    config,
-    handleConfig
+    config
   }
 }
