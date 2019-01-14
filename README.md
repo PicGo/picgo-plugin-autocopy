@@ -27,7 +27,7 @@ picgo install autocopy
 To change the default type of url, please run:
 
 ```bash
-picgo set pluin autocopy
+picgo set plugin autocopy
 ```
 
 **Custom** means you can create your own types of url for copying. Just place the `$url` to your own string.
