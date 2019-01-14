@@ -11,14 +11,14 @@ A [picgo](https://github.com/PicGo/PicGo-Core) plugin for auto copying url to cl
 ## Installation
 
 ```bash
-picgo install picgo-plugin-autocopy
+picgo install autocopy
 ```
 
 ## Configuration
 
 `picgo-plugin-autocopy` supports 5 kinds of url types:
 
-- Markdown
+- markdown
 - URL (default)
 - HTML
 - UBB
